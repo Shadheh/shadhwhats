@@ -4,23 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ShadsApp QR</title>
+  <title>ShadsApp</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="manifest" href="manifest.json" />
 </head>
 <body>
-  <div class="chat-container">
+  <div class="app">
     <header>
       <h1>ShadsApp 💬</h1>
-    </header>
-    <div id="room-indicator"></div>
-    <main id="chat-box"></main>
-    <footer>
-      <input type="text" id="messageInput" placeholder="Type a message..." />
-      <button onclick="sendMessage()">Send</button>
       <button onclick="startScan()">📷</button>
+    </header>
+    <div id="room-name"></div>
+    <main id="chat"></main>
+    <footer>
+      <input type="text" id="msg" placeholder="Type a message..." />
+      <button onclick="sendMessage()">Send</button>
     </footer>
-    <video id="qr-video" width="200" height="150" style="display:none;"></video>
+    <video id="qr-video" style="display:none;width:100%;"></video>
   </div>
   <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
   <script src="client.js"></script>

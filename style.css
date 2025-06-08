@@ -1,0 +1,43 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #000;
+  color: #fff;
+}
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+header {
+  background: #111;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+main {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+footer {
+  display: flex;
+  padding: 0.5rem;
+  background: #111;
+}
+input {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #06f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
